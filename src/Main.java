@@ -10,7 +10,8 @@ public class Main {
     private void testCreateSave() {
         try {
             Catalog catalog = new Catalog("Java Resources", "catalog.ser");
-            Document doc = new Document("java1", "Java Course 1", "D:\\facultate\\anul_2\\javapa lab\\javapalab5\\README.md");
+            Document doc = new Document("java1", "Java Course 1", "https://profs.info.uaic.ro/~acf/java/slides/en/intro_slide_en.pdf");
+            //Document doc = new Document("java1", "Java Course 1", "D:\\README.md");
             doc.addTag("type", "Slides");
             catalog.add(doc);
             CatalogUtil.save(catalog);
