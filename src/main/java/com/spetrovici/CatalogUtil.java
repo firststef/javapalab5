@@ -1,3 +1,4 @@
+package com.spetrovici;
 import java.awt.*;
 import java.io.*;
 import java.net.URI;

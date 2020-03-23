@@ -1,3 +1,4 @@
+package com.spetrovici;
 import java.io.File;
 import java.io.Serializable;
 import java.util.HashMap;

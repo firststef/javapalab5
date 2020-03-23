@@ -1,8 +1,10 @@
+package com.spetrovici;
+
 import java.io.IOException;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
-        Main app = new Main();
+        App app = new App();
         app.testCreateSave();
         app.testLoadView();
     }
