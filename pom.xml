@@ -86,6 +86,19 @@
           <target>8</target>
         </configuration>
       </plugin>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>com.spetrovici</groupId>
+        <artifactId>javapalab5</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.spetrovici.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
