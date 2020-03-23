@@ -1,8 +1,8 @@
 package com.spetrovici;
-import java.io.File;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Document implements Serializable {
     private String id;
@@ -51,5 +51,24 @@ public class Document implements Serializable {
 
     public void setTags(Map<String, Object> tags) {
         this.tags = tags;
+    }
+
+    @Override
+    public String toString() {
+        return "Document{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                '}';
+    }
+
+    public String toHtml(){
+        return "<h1>" + name +
+                "</h1><br>" + "<p>" + id + "</p><br>" +
+                "<p>" + location + "</p><br><div>" +
+                tags.entrySet().stream().map(
+                        (e) -> "<div><p>Tag:" + e.getKey() + "</p><br>" + e.getValue().toString() + "</div>"
+                ).collect(Collectors.joining("<br>")) +
+                "</div>";
     }
 }

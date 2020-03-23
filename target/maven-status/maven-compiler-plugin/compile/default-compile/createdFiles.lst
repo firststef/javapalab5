@@ -1,5 +1,5 @@
 com\spetrovici\Catalog.class
 com\spetrovici\Document.class
-com\spetrovici\App.class
 com\spetrovici\CatalogUtil.class
 com\spetrovici\InvalidCatalogException.class
+com\spetrovici\App.class
